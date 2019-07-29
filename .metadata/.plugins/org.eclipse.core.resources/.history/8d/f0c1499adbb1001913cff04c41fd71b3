@@ -1,0 +1,19 @@
+package com.cg.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+public class Author {
+	
+	@GeneratedValue(strategy=GenerationType.AUTO) 
+	private int id;
+	
+	private String name;
+	
+	@ManyToMany(targetEntity=Book.class)
+	private List Book;
+	
+
+}

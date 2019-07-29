@@ -1,0 +1,14 @@
+package com.cg.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Greet {
+	@Id
+	@Column
+	private int messageId;
+	private String message;
+
+}

@@ -1,0 +1,8 @@
+package com.cg.entities;
+
+public class Author {
+	
+	private int id;
+	
+
+}

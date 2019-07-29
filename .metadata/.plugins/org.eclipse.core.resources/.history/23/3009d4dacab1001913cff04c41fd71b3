@@ -1,0 +1,9 @@
+package com.cg.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table(name="Author")
+public class Author {
+
+}

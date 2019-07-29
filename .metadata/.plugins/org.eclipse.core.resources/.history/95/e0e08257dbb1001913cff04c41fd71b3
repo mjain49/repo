@@ -1,0 +1,11 @@
+package com.cg.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Author {
+	
+	private int id;
+	
+
+}

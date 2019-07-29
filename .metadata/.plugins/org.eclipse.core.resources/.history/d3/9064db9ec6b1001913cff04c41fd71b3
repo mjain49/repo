@@ -1,0 +1,33 @@
+package com.cg.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Greet {
+	@Id
+	@Column(name="MessageID",length=20)
+	private int messageId;
+	private String message;
+	
+	public int getMessageId() {
+		return messageId;
+	}
+	public void setMessageId(int messageId) {
+		this.messageId = messageId;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	@Override
+	public String toString() {
+		return "Greet [messageId=" + messageId + ", message=" + message + "]";
+	}
+	
+	
+
+}

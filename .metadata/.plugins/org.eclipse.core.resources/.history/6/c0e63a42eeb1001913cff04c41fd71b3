@@ -1,0 +1,27 @@
+package com.cg.entities;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class Client {
+	public static void main(String[] args) {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA-PU");
+		EntityManager em = emf.createEntityManager();
+		em.getTransaction().begin();
+//		
+//		Book book = new Book();
+//		
+//		book.setIsbn(100);
+//		book.setPrice(500);
+//		book.setTitle("JPA");
+		Author author1=new Author(1,"A1",null);
+		Author author2=new Author(2,"A2",null);
+		
+		
+		em.getTransaction().commit();
+		em.close();
+		emf.close();
+	}
+
+}
